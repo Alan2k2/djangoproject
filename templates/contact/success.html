@@ -1,0 +1,21 @@
+<!-- success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    
+    <script>
+        // Redirect to index page after 3 seconds
+        setTimeout(function() {
+            window.location.href = "{% url './index' %}";  // Change 'index' to your actual URL name if different
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</head>
+<body>
+    <h1>Success!</h1>
+    <p>Your message has been sent successfully.</p>
+    <p>You will be redirected shortly.</p>
+</body>
+</html>
