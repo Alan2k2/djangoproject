@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     # 'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
@@ -136,3 +137,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'alanshaju26@gmail.com'  # your Gmail email
 EMAIL_HOST_PASSWORD = 'cxdb kvcn dwem dcyq'  # your Gmail password (preferably App Password if you use 2FA)
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://djangoproject-mysite.onrender.com',
+]
