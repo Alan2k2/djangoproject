@@ -135,7 +135,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'alanshaju26@gmail.com'  # your Gmail email
-EMAIL_HOST_PASSWORD = 'cxdb kvcn dwem dcyq'  # your Gmail password (preferably App Password if you use 2FA)
+EMAIL_HOST_PASSWORD = 'jnqz mfst cqkk shqz'  # your Gmail password (preferably App Password if you use 2FA)
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 CSRF_TRUSTED_ORIGINS = [
