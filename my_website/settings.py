@@ -135,12 +135,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'alanshaju26@gmail.com'  # your Gmail email
-<<<<<<< HEAD
 EMAIL_HOST_PASSWORD = 'rojk sops mjhk vnrg'  # your Gmail password (preferably App Password if you use 2FA)
-=======
-EMAIL_HOST_PASSWORD = 'jnqz mfst cqkk shqz'  # your Gmail password (preferably App Password if you use 2FA)
->>>>>>> 7851e4003d0045c7a02bf20c68190214638f2596
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
 
 CSRF_TRUSTED_ORIGINS = [
     'https://djangoproject-mysite.onrender.com',
