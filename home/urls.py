@@ -7,4 +7,5 @@ urlpatterns = [
     path('', views.index),
     path('contact/', contact_view, name='contact'),
     path('success/', lambda request: render(request, 'contact/success.html'), name='success'),
+    path('download/brochure/', views.download_brochure, name='download_brochure'),
 ]
