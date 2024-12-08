@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-fmmz2)n8y(=n+r)-0!0yval5brrz2&$pft&!3%ypy(qza3+ugc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangoproject-mysite.onrender.com', 'localhost', '44.226.145.213']
 
 
 # Application definition
@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'my_website.urls'
@@ -119,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
@@ -133,5 +135,13 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'alanshaju26@gmail.com'  # your Gmail email
+<<<<<<< HEAD
 EMAIL_HOST_PASSWORD = 'rojk sops mjhk vnrg'  # your Gmail password (preferably App Password if you use 2FA)
+=======
+EMAIL_HOST_PASSWORD = 'jnqz mfst cqkk shqz'  # your Gmail password (preferably App Password if you use 2FA)
+>>>>>>> 7851e4003d0045c7a02bf20c68190214638f2596
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://djangoproject-mysite.onrender.com',
+]
