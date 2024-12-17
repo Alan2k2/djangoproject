@@ -170,7 +170,7 @@ def contact_view(request):
 
 
 def download_brochure(request):
-    file_path = os.path.join(settings.BASE_DIR, 'static/files/brochure.pdf')
+    file_path = os.path.join(settings.BASE_DIR, 'brouchure_view')
     if os.path.exists(file_path):
         return FileResponse(open(file_path, 'rb'), as_attachment=True, filename='brochure.pdf')
     else:
