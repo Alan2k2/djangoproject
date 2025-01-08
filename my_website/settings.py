@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-fmmz2)n8y(=n+r)-0!0yval5brrz2&$pft&!3%ypy(qza3+ugc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djangoproject-mysite.onrender.com', 'localhost', '44.226.145.213']
+#ALLOWED_HOSTS = ['djangoproject-mysite.onrender.com', 'localhost', '44.226.145.213']
+ALLOWED_HOSTS = ['62.72.56.131', 'cybersecurityspecialist.in']
+
 
 
 # Application definition
@@ -139,5 +141,5 @@ EMAIL_HOST_PASSWORD = 'rojk sops mjhk vnrg'  # your Gmail password (preferably A
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://djangoproject-mysite.onrender.com',
+    'https://cybersecurityspecialist.in',
 ]
