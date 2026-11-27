@@ -1,11 +1,11 @@
-from django.shortcuts import render
+from django.urls import path
+from django.views.generic import TemplateView
+
 from . import views
-from django.urls import include, path
-from .views import contact_view
 
 urlpatterns = [
-    path('', views.index),
-    path('contact/', contact_view, name='contact'),
-    path('success/', lambda request: render(request, 'contact/success.html'), name='success'),
-    path('download/brochure/', views.download_brochure, name='download_brochure'),
+    path("", views.index, name="index"),
+    path("contact/", views.contact_view, name="contact"),
+    path("success/", TemplateView.as_view(template_name="contact/success.html"), name="success"),
+    path("download/brochure/", views.download_brochure, name="download_brochure"),
 ]

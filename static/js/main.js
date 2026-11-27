@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
             
             // change active class on link
             $('nav a.active').removeClass('active');
-            $($('a')[currSlide]).addClass('active');
+            $($('nav a')[currSlide]).addClass('active');
             
         }
       
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             e.preventDefault();
         }
         
-        $('nav a, .main-btn a').click(function(e) {
+        $('nav a[href^="#"], .main-btn a[href^="#"]').click(function(e) {
             // When link clicked, find slide it points to
             var newslide = parseInt($(this).attr('href')[1]);
             // find how far it is from current slide
@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
         var $slide = $('.slide');
       
         // give active class to first link
-        $($('nav a')[0]).addClass('active');
+        showSlide($('#contact[data-open-contact]').length ? $slide.length - 1 : 0);
         
         // add event listener for mousescroll
         $body.bind('false', mouseEvent);
