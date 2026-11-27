@@ -1,21 +1,15 @@
-<!-- success.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success</title>
-    
-    <script>
-        // Redirect to index page after 3 seconds
-        setTimeout(function() {
-            window.location.href = "{% url './index' %}";  // Change 'index' to your actual URL name if different
-        }, 3000); // 3000 milliseconds = 3 seconds
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message sent | Alan Shaju</title>
 </head>
 <body>
-    <h1>Success!</h1>
-    <p>Your message has been sent successfully.</p>
-    <p>You will be redirected shortly.</p>
+    <main>
+        <h1>Message sent</h1>
+        <p>Thank you for getting in touch.</p>
+        <p><a href="{% url 'index' %}">Back to the portfolio</a></p>
+    </main>
 </body>
 </html>
